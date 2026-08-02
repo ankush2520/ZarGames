@@ -21,6 +21,8 @@ public class MainGameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        
     }
 
     private void Start()
