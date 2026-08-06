@@ -1,9 +1,8 @@
-*.meta
-*.txt
-*.mvfrm
-/Library
-*.log
-*.obj
-*.gbc
-/ProjectSettings
+Library
 /Temp
+/Obj
+/Build
+/Builds
+/Logs
+/UserSettings
+*.log
