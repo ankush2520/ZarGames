@@ -1,29 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-   
-   public GameObject bulletPrefab; // Reference to the bullet prefab
-   public Transform firePoint; // The point from where the bullet will be fired
+    public GameObject bulletPrefab; // Reference to the bullet prefab
+    public Transform firePoint; // The point from where the bullet will be fired
+    public float speedOfBullet = 24f; // Speed of the bullet
+    public float superBulletSpeedMultiplier = 1.8f; // Speed multiplier for super bullets
+    public Vector3 superBulletScale = new Vector3(1.6f, 1.6f, 1.6f); // Visual size for super bullets
 
     public void FireBullet()
     {
-        // Implement the firing logic here        
-        // Instantiate the bullet prefab at the gun's position and rotation
-        GameObject bullet =  Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
 
-        // Optionally, you can add force to the bullet's Rigidbody to make it move
         Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
         if (bulletRigidbody != null)
         {
-            // Apply force to the bullet in the forward direction of the gun
-            bulletRigidbody.AddForce(transform.up * 12f, ForceMode.Impulse);
+            bulletRigidbody.AddForce(transform.up * speedOfBullet, ForceMode.Impulse);
         }
-
     }
 
-   
+    public void FireSuperBullet()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
 
+        superBullet superBulletComponent = bullet.GetComponent<superBullet>();
+        if (superBulletComponent == null)
+        {
+            superBulletComponent = bullet.AddComponent<superBullet>();
+        }
+
+        superBulletComponent.Initialize(superBulletScale, speedOfBullet * superBulletSpeedMultiplier);
+    }
 }

@@ -1,13 +1,21 @@
 using UnityEngine;
+using TMPro;
 
 public class MainGameManager : MonoBehaviour
 {
    
    public Gun gun;
+   public TextMeshProUGUI scoreText;
+   public Enemy enemyPrefab;
+   public duplicateEnemy duplicateEnemyPrefab;
    public float screenHeightWorld;
    public float screenWidthWorld;
 
    private float timeSinceLastFire = 0f;
+   private float enemySpawnTimer = 2f;
+   private float duplicateEnemySpawnTimer = 5f;
+   
+   private int score = 0;
 
     public static MainGameManager Instance { get; private set; }
      private void Awake()
@@ -41,6 +49,9 @@ public class MainGameManager : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         MoveGun(horizontalInput);
         FireGun();
+
+        SpawnEnemy();
+        SpawnDuplicateEnemy();
     }
 
     
@@ -65,12 +76,48 @@ public class MainGameManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && timeSinceLastFire >= 0.5f) // Check if space is pressed and enough time has passed since the last fire
         {           
-            gun.FireBullet();
+            Debug.Log("Firing super bullet");
+            gun.FireSuperBullet();
             timeSinceLastFire = 0f; // Reset the timer after firings
         }
         else
         {
             timeSinceLastFire += Time.fixedDeltaTime; // Increment the timer
         }
+        
+    }
+
+    private void SpawnEnemy()
+    {
+        enemySpawnTimer += Time.fixedDeltaTime;
+        if (enemySpawnTimer >= 2f) // Spawn an enemy every 2 seconds
+        {
+            enemySpawnTimer = 0f; // Reset the timer
+                    float randomX = Random.Range(-screenWidthWorld / 2, screenWidthWorld / 2);
+        Vector3 spawnPosition = new Vector3(randomX, screenHeightWorld / 2, 0);
+        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        }
+
+    }
+    private void SpawnDuplicateEnemy()
+    {
+        duplicateEnemySpawnTimer += Time.fixedDeltaTime;
+        if (duplicateEnemySpawnTimer >= 5f) // Spawn a duplicate enemy every 5 seconds
+        {
+            duplicateEnemySpawnTimer = 0f; // Reset the timer
+            float randomX = Random.Range(-screenWidthWorld / 2, screenWidthWorld / 2);
+            Vector3 spawnPosition = new Vector3(randomX, screenHeightWorld / 2, 0);
+            Instantiate(duplicateEnemyPrefab, spawnPosition, Quaternion.identity);
+        }
+    }
+    
+    public void UpdateScore()
+    {
+        score ++;
+        scoreText.text = "Score: " + score.ToString();
     }
 }
+
+
+
+

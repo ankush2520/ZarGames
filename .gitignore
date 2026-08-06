@@ -1,0 +1,9 @@
+*.meta
+*.txt
+*.mvfrm
+/Library
+*.log
+*.obj
+*.gbc
+/ProjectSettings
+/Temp
