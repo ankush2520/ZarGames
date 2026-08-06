@@ -179,8 +179,8 @@ Light:
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Range: 999
+  m_SpotAngle: 87.1
   m_InnerSpotAngle: 21.802082
   m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
@@ -241,7 +241,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0.04, y: 2.13, z: -3.29}
+  m_LocalPosition: {x: 1.42, y: 0.65, z: -2.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -375,7 +375,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6400492213087075203, guid: 42e078a7df27d45da892751f7f6c4a41, type: 3}
   firePoint: {fileID: 156596638}
-  speedOfBullet: 50
+  speedOfBullet: 10
+  superBulletSpeedMultiplier: 1.8
+  superBulletScale: {x: 1.6, y: 1.6, z: 1.6}
 --- !u!1 &1146386819
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +517,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 1, b: 0.2579531, a: 0}
+  m_BackGroundColor: {r: 0.827044, g: 0.91832376, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -583,7 +585,7 @@ GameObject:
   - component: {fileID: 1938698555}
   - component: {fileID: 1938698554}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,7 +607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93, y: 319}
+  m_AnchoredPosition: {x: -96, y: 319}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938698554
@@ -739,7 +741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 1094727772}
   scoreText: {fileID: 1938698554}
-  enemyPrefab: {fileID: 3471831829507253417, guid: 392d8d24cb11fee40a6690300751850e, type: 3}
+  enemyPrefab: {fileID: -1032444939883016991, guid: 392d8d24cb11fee40a6690300751850e, type: 3}
+  duplicateEnemyPrefab: {fileID: 8217132201289593845, guid: 05ecb1a6b69aab845a402c1073641d55, type: 3}
   screenHeightWorld: 0
   screenWidthWorld: 0
 --- !u!4 &1967743644
