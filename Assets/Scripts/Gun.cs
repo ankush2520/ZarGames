@@ -23,12 +23,12 @@ public class Gun : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
 
-        superBullet superBulletComponent = bullet.GetComponent<superBullet>();
+        Rigidbody superBulletComponent = bullet.GetComponent<Rigidbody>();
         if (superBulletComponent == null)
         {
-            superBulletComponent = bullet.AddComponent<superBullet>();
+            superBulletComponent = bullet.AddComponent<Rigidbody>();
         }
 
-        superBulletComponent.Initialize(superBulletScale, speedOfBullet * superBulletSpeedMultiplier);
+        superBulletComponent.AddForce(transform.up * speedOfBullet * superBulletSpeedMultiplier, ForceMode.Impulse);
     }
 }

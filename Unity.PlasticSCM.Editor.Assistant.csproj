@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -52,28 +53,28 @@
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/Scripting/BCLExtensions/TargetingPacks/netstandard2.1/analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/AnnotateTools.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/ChangesetTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/DiffTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/BranchTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UnityVersionControlApiProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/UI/Interactions/RadioGroupInteraction.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UndoTools.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/InteractionTools.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/LabelTools.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/UI/Interactions/ConfirmationInteraction.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UVCSLinkHandler.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/ChangesetTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/QueryTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UVCSExecuteTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/UI/Interactions/DropDownInteraction.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UVCSToolContext.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UITools.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/InteractionTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/ProjectManagementTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/CodeReviewTools.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/UI/Interactions/OptionChoice.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UVCSOperation.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/HistoryTools.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/LabelTools.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/UI/Interactions/ConfirmationInteraction.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/UVCSLinkHandler.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@4f3be89e8675/Editor/Assistant/Tools/LockTools.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -738,6 +739,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class superBullet : MonoBehaviour
+public class SuperBullet : MonoBehaviour
 {
     public float explosionRadius = 2f;
     private bool hasExploded;

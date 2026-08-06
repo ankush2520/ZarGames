@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -53,56 +54,56 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/UserDataChunk.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/SpriteAtlasGeneration.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Utilities/PlatformSettingsUtilities.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/TextContent.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/TextureGeneration.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/BaseChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/CellChunk.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/FrameData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/TilesetChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImporterAPIs.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Inspector/TexturePlatformSettingsModel.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/PrefabGeneration.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/IPaletteProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/AsepriteFile.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/ExternalFilesChunk.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/PaletteChunk.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImportData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/SliceChunk.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Utilities/ImportUtilities.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/CellExtra.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Inspector/ExportAssetsPopup.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/AnimationClipGeneration.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/PathChunk.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/BackgroundImport.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/ImporterStructures.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/OldPaletteChunk.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImporter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/SpriteAtlasGeneration.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/BaseChunk.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/FrameData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/TagsChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/MaskChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Tasks/CellTasks.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/IPaletteProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImporterSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImporterEditorExternalData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Tasks/TextureTasks.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/AsepriteFile.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/ExternalFilesChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/AsepriteReader.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/PaletteChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/AnimatorControllerGeneration.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImportData.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Tasks/ImportMergedLayers.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/SliceChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/TilePaletteGeneration.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Utilities/ImportUtilities.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/CellExtra.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Utilities/Zlib.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Inspector/ExportAssetsPopup.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/SpriteData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/NoneChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/ColorProfileChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Inspector/AsepriteImporterEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteSpriteEditorDataProvider.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AssetGeneration/AnimationClipGeneration.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImporterDataProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/LayerChunk.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/PathChunk.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Tasks/PixelBlends.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/OldPaletteChunk2.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/AsepriteUtilities.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/BackgroundImport.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Inspector/ImporterEditorUtils.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/UserSettings.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/ImporterStructures.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Aseprite/Chunks/OldPaletteChunk.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/AsepriteImporter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Assets/UI/ExportAnimAssetsStyleSheet.uss" />
@@ -768,6 +769,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

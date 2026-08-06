@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -52,24 +53,24 @@
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/Scripting/BCLExtensions/TargetingPacks/netstandard2.1/analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/TexturePlatformSettings/TexturePlatformSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteDataProviders/SpriteCustomDataProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/AssetCreation.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteEditorModuleModeBase.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteFrameModeToolStripBase.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/ModelPreviewer.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/TexturePlatformSettingsHelper.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/Deprecated/SpriteEditorModuleModeBase_Deprecated.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/AssemblyInfo.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteDataProviders/SpriteCustomMetadataProvider.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/InternalEditorBridge.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteEditorWindowBridge.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/InternalEditorBridge.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/OverlayPopupWindow.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/TexturePlatformSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/TexturePlatformSettings/TexturePlatformSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteFrameModeToolStripBase.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteDataProviders/SpriteCustomMetadataProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/InternalEditorBridge.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.common@73badf92ba8b/Editor/InternalBridge/SpriteAtlasBridge.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/AnimatorControllerHelper.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/TexturePlatformSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library/PackageCache/com.unity.2d.aseprite@d13865913efa/Editor/Common/InternalBridge/InternalBridgeRef.asmref" />
@@ -734,6 +735,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

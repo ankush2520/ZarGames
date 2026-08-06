@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class MainGameManager : MonoBehaviour
@@ -6,16 +7,21 @@ public class MainGameManager : MonoBehaviour
    
    public Gun gun;
    public TextMeshProUGUI scoreText;
+  public TextMeshProUGUI enemyMissText;
+  public GameObject gameOverPopup;
    public Enemy enemyPrefab;
-   public duplicateEnemy duplicateEnemyPrefab;
+   public FinalBoss duplicateEnemyPrefab;
    public float screenHeightWorld;
    public float screenWidthWorld;
+
+
 
    private float timeSinceLastFire = 0f;
    private float enemySpawnTimer = 2f;
    private float duplicateEnemySpawnTimer = 5f;
    
    private int score = 0;
+   private int enemyMissCount = 0;
 
     public static MainGameManager Instance { get; private set; }
      private void Awake()
@@ -51,7 +57,7 @@ public class MainGameManager : MonoBehaviour
         FireGun();
 
         SpawnEnemy();
-        SpawnDuplicateEnemy();
+        
     }
 
     
@@ -77,7 +83,7 @@ public class MainGameManager : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && timeSinceLastFire >= 0.5f) // Check if space is pressed and enough time has passed since the last fire
         {           
             Debug.Log("Firing super bullet");
-            gun.FireSuperBullet();
+            gun.FireBullet();
             timeSinceLastFire = 0f; // Reset the timer after firings
         }
         else
@@ -99,23 +105,36 @@ public class MainGameManager : MonoBehaviour
         }
 
     }
-    private void SpawnDuplicateEnemy()
+
+    private void GameOver()
     {
-        duplicateEnemySpawnTimer += Time.fixedDeltaTime;
-        if (duplicateEnemySpawnTimer >= 5f) // Spawn a duplicate enemy every 5 seconds
-        {
-            duplicateEnemySpawnTimer = 0f; // Reset the timer
-            float randomX = Random.Range(-screenWidthWorld / 2, screenWidthWorld / 2);
-            Vector3 spawnPosition = new Vector3(randomX, screenHeightWorld / 2, 0);
-            Instantiate(duplicateEnemyPrefab, spawnPosition, Quaternion.identity);
-        }
+        // Implement game over logic here (e.g., show game over screen, stop the game, etc.)
+       // Debug.Log("Game Over!");
+        gameOverPopup.SetActive(true);
     }
+   
     
     public void UpdateScore()
     {
         score ++;
         scoreText.text = "Score: " + score.ToString();
     }
+
+    public void UpdateEnemyMissCount()
+    {
+        enemyMissCount++;
+        enemyMissText.text = "Enemy Missed: " + enemyMissCount.ToString();
+        if (enemyMissCount >= 3)
+        {
+            GameOver();
+        }
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("MainGame");
+    }
+   
 }
 
 

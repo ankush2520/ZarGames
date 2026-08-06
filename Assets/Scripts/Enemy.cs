@@ -11,6 +11,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.down * 2f * Time.fixedDeltaTime); // Move down at a speed of 2 units per second
+        transform.Translate(Vector3.down * 2f * Time.fixedDeltaTime); // Move down at a speed of 2 units per
+        //  second
+
+        if (MainGameManager.Instance != null && transform.position.y < -MainGameManager.Instance.screenHeightWorld / 2f)
+        {
+            MainGameManager.Instance.UpdateEnemyMissCount();
+            Destroy(gameObject);
+        }
     }
 }

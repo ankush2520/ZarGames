@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class duplicateEnemy : MonoBehaviour
+public class FinalBoss : MonoBehaviour
 {
     private void FixedUpdate()
     {

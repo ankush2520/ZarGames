@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -53,49 +54,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/StreamCompressionModel.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeStream.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringFormatMethods.gen.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedList.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeNotBurstCompatible.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelHashMapExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeStream.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringParseMethods.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/BitField.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeText.gen.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DoubleRewindableAllocators.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeQueue.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/xxHash3.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UTF8ArrayUnsafeUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringUtils.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DebugView.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/ListExtensions.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeArrayExtensions.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeParallelHashSetExtensions.gen.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeNotBurstCompatible.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeList.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeHashSet.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeParallelHashMap.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeHashMap.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/xxHash3.StreamingState.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeList.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringMethods.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/AssemblyInfo.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelHashSetExtensions.gen.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedString.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeHashSet.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeAtomicCounter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeParallelHashSet.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeSort.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeQueue.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DataStreamWriter.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Unicode.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DataStreamReader.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/IJobFilter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelMultiHashMap.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeBitArray.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/AllocatorManager.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeReference.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringAppendMethods.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeRingQueue.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringFormat.gen.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/ConcurrentMask.cs" />
@@ -108,19 +88,40 @@
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/IJobParallelForBatch.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeBitArray.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/EarlyInitHelpers.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/GenerateTestsForBurstCompatibilityAttribute.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/IJobParallelForDefer.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UIntFloat.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeStream.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringFormatMethods.gen.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeNotBurstCompatible.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelHashMapExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeStream.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/xxHash3.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UTF8ArrayUnsafeUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DebugView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/ListExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeHashSet.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeList.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelHashSetExtensions.gen.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeHashSet.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeAtomicCounter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeParallelHashSet.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeQueue.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DataStreamReader.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/IJobFilter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelMultiHashMap.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeReference.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringAppendMethods.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeUtilityEx.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeAppendBuffer.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/RewindableAllocator.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/GenerateTestsForBurstCompatibilityAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/RegisterGenericJobTypeAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/AutoFreeAllocator.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/DataStreamExtensions.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeParallelHashMap.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/FixedStringInternalMethods.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/Jobs/IJobParallelForDefer.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeParallelMultiHashMap.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/NativeHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UIntFloat.cs" />
     <Compile Include="Library/PackageCache/com.unity.collections@a43cabe808ca/Unity.Collections/UnsafeText.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -773,6 +774,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

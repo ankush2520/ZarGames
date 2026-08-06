@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -52,15 +53,15 @@
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/Scripting/BCLExtensions/TargetingPacks/netstandard2.1/analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/RuleOverrideTile/AdvancedRuleOverrideTile.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/IsometricRuleTile/IsometricRuleTile.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/GridInformation/GridInformation.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/AnimatedTile/AnimatedTile.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/HexagonalRuleTile/HexagonalRuleTile.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/AutoTile/AutoTile.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/RuleTile/RuleTile.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/RuleOverrideTile/RuleOverrideTile.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/IsometricRuleTile/IsometricRuleTile.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Tiles/HexagonalRuleTile/HexagonalRuleTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library/PackageCache/com.unity.2d.tilemap.extras@a80140457adc/Runtime/Unity.2D.Tilemap.Extras.asmdef" />
@@ -712,6 +713,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

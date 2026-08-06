@@ -28,13 +28,7 @@ public class Bullet : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
-        else if (other.CompareTag("duplicateEnemy"))
-        {
-            SpawnSplitEnemies(other.transform.position);
-            AwardScore();
-            Destroy(other.gameObject);
-            Destroy(gameObject);
-        }
+        
     }
 
     private void SpawnSplitEnemies(Vector3 position)

@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -53,31 +54,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDLayer.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDLayerMappingStrategy.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterAssetPostProcessor.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/ImportColumnHeaderToggle.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/PSDImporterMultiColumnTreeViewUI.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImportData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDGameObjectPreviewData.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterAPI.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImportPostProcessor.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/UIColumn.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/Tasks/FlattenImageTask.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/ImportUtilites.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/ImportColumn.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/SpriteData.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/Pipeline.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/LayerNameColumn.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterDataProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/Tasks/ExtractLayerTask.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/TextureImporterUtilities.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterEditorExternalData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/TextContent.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDSpriteEditorDataProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/Tooltips.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDLayerMappingStrategy.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterAssetPostProcessor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/PSDImporterMultiColumnTreeViewUI.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImportData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterAPI.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImportPostProcessor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/UIColumn.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/ImportUtilites.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/UTK/ImportColumn.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/Pipeline.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDSpriteEditorDataProvider.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.psdimporter@5d82044f9e43/Editor/PSDImporterEditorLayerTreeView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -743,6 +744,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -53,22 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteAddPopup.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/GridPaintPaletteWindowActiveTargets.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileSet.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePaletteActiveTargetsProperties.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/RotateTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/FillTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridSelectionEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteContextMenuHandler.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrushPickStoreSettings.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TextUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardErrorElement.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesPopup.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushInspector.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/PaintableSceneViewGrid.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteCreateTargetsDropdownMenu.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/SceneViewGridManager.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActivePaletteDropdownMenu.cs" />
@@ -76,96 +69,104 @@
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardButton.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardFirstUserElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/FlipTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteDragHandler.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPalettes.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintPaletteClipboard.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileTemplate.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardViewElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickItemElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrush.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/TilemapEditorToolPreferences.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/GridPaintingToolbar.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/SceneViewOpenTilePaletteHelper.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteOverlayUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushModalElement.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActiveTargetsPopup.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/SceneViewOpenTilePaletteOverlay.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/SceneViewTilemapFocusOverlay.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilemapFocusModeUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/External/GridView.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/PaintableGrid.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/TilemapEditorToolPreferencesAsset.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardOverlay.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintPaletteWindow.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileSetImporterEditor.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileSetUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintSortingAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionToolEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushInspectorPopup.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/ObjectCreationMenu/DefaultAssetCreation.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileDragAndDropManager.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TileSetImporterDragAndDropManipulator.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickOverlay.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActiveTargetsButton.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrushesDropdown.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrushPickStore.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePaletteSaveUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/BrushToolsAttribute.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintTargetsDropdown.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/PositionTileTemplate.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesButton.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/ObjectCreationMenu/GameObjectCreation.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickPanelPopup.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridEditorUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionRotationTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrushEditor.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPanelButton.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActiveTargetsDropdownMenu.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickButton.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteWhiteboxPalettesDropdown.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileSetImporter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/TilemapEditorTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionMoveTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePaletteWhiteboxSamplesUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridSelection.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/MoveTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/BoxTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/GridPaintPaletteWindowSplitView.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesLabel.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushInspectorElement.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionScaleTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardPanelPopup.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePalettePrefabUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteMouseCursorUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintingState.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintPaletteWindowPreferences.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilemapEditorToolButton.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/PaintTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteOverlayToolbarElementAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesDropdownToggle.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActivePalettePopup.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/EraseTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPalettesDropdown.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteElement.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/BoolFieldOverlayPopupWindow.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintCreateTargetsDropdown.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/SelectTool.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesDropdownMenu.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilemapEditorToolbarStrip.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteWhiteboxPaletteDropdownMenu.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteAddWhiteboxPopup.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/GridPaintPaletteWindowActiveTargets.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePaletteActiveTargetsProperties.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/RotateTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/FillTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridSelectionEditor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesPopup.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/PaintableSceneViewGrid.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickElement.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteDragHandler.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintPaletteClipboard.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardViewElement.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/TilemapEditorToolPreferences.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/GridPaintingToolbar.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteOverlayUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushModalElement.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActiveTargetsPopup.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/SceneViewOpenTilePaletteOverlay.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilemapFocusModeUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/TilemapEditorToolPreferencesAsset.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardOverlay.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileSetUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintSortingAttribute.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileDragAndDropManager.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrushPickStore.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePaletteSaveUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/BrushToolsAttribute.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintTargetsDropdown.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/ObjectCreationMenu/GameObjectCreation.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridEditorUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionRotationTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPanelButton.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteActiveTargetsDropdownMenu.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushPickButton.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileSet/TileSetImporter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/TilemapEditorTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilePaletteWhiteboxSamplesUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/MoveTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionScaleTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardPanelPopup.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteMouseCursorUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaintPaletteWindowPreferences.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/PaintTool.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteOverlayToolbarElementAttribute.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteElement.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/BoolFieldOverlayPopupWindow.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteClipboardElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilesetImporterElement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileDragAndDropHoverData.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/CreateTileFromPaletteAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/External/RenameableLabel.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/EditorTools/GridSelection/GridSelectionTransformTool.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TilemapPrefabStageHelper.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteBrushesDropdownMenu.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/TileDragAndDrop.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilemapEditorToolbarStrip.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/UI/TilePaletteWhiteboxPaletteDropdownMenu.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteBrushes.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridPaletteAddWhiteboxPopup.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.tilemap@b959501fd678/Editor/GridBrushEditorBase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -838,6 +839,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

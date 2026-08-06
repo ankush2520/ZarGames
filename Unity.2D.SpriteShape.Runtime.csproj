@@ -36,13 +36,14 @@
   </PropertyGroup>
   <PropertyGroup>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.26</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
     <UnityVersion>6000.5.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="/Users/ankush2520/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.2.2/Analyzers/Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/6000.5.6f1/Unity.app/Contents/Resources/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -56,20 +57,20 @@
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/Dict.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/Sweep.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeGeometryModifier.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/Spline.cs" />
+    <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/Tess.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeObjectPlacement.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShape.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SplineUtility.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/Geom.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/MeshUtils.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeGeometryModifier.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeGeometryCache.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeDefaultCreator.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/PriorityHeap.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/PriorityQueue.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/BezierUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/Spline.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/Mesh.cs" />
-    <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/External/LibTessDotNet/Tess.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeController.cs" />
     <Compile Include="Library/PackageCache/com.unity.2d.spriteshape@fcb7ec61a58b/Runtime/SpriteShapeGenerator.cs" />
   </ItemGroup>
@@ -724,6 +725,22 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Tracker.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library/PackageCache/com.unity.analytics@c9d14a6bdec6/Unity.Analytics.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64/Runtime/Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
